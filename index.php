@@ -14,5 +14,22 @@ else
 	
 }
 
+$Edad ="20";
+
+if (Edad >=18)
+{
+	
+	echo "<h1>Su edad es apropiada para registrarse.</h1>";
+	
+}
+else
+{
+	
+	echo "<h1>Su edad no es apropiada para registrase.</h1>";
+	
+}
+
+
+
 
 ?>
