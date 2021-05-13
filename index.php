@@ -2,6 +2,9 @@
 require_once("index.html");
 
 
-echo("Hola mundoss");
+$Nombre = "Jose luis";
+echo "Mi nombre es $Nombre";
+
+
 
 ?>
