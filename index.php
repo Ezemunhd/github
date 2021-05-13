@@ -14,7 +14,7 @@ else
 	
 }
 
-$Edad ="20";
+$Edad = "20";
 
 if ($Edad >=18)
 {
