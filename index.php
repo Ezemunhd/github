@@ -2,6 +2,6 @@
 require_once("index.html");
 
 
-echo("Hola mundo");
+echo("Hola mundos");
 
 ?>
