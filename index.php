@@ -22,9 +22,9 @@ if (is_numeric ($_GET['Numero'])&& $_GET['Numero'] > 1 && $_GET['Numero']== roun
 		
 	}
 	if ($Esprimo)
-		echo "<p>El numero " .$_GET['Numero'] . "Es primo </p>"
+		echo "<p>El numero " .$_GET['Numero'] . "Es primo </p>";
         else
-        echo  "<p>El numero".$_GET[''Numero] . "No es primo</p>"			
+        echo  "<p>El numero".$_GET['Numero'] . "No es primo</p>";			
 	
 }
 else
