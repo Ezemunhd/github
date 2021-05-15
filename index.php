@@ -3,7 +3,7 @@ require_once("index.html");
 
 
 
-$Miarray= Array(Jonathan,Ezequiel,Ramon,Sol,Mariano,Fernando,Susana,Emilse,Juanpablo,Brian,Victoria);
+$Miarray = array(Jonathan,Ezequiel,Ramon,Sol,Mariano,Fernando,Susana,Emilse,Juanpablo,Brian,Victoria);
 
 print_r($Miarray);
 
