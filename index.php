@@ -12,10 +12,3 @@ print_r($Miarray);
 
 
 
-
-<form method="POST">
-<p>¿Cual es tu nombre?</p>
-<input Name="Nombre" type="text">
-<input type="submit" value="Enviar">
-
-</form>
