@@ -9,7 +9,7 @@ if (is_numeric ($_GET['Numero'])&& $_GET['Numero'] > 1 && $_GET['Numero']== roun
 else
 {
 	
-	"<p>Incorrecto</p>";
+	echo"<p>Incorrecto</p>";
 	
 }
 
