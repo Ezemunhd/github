@@ -3,7 +3,7 @@ require_once("index.html");
 
 
 
-$miArray = array(1,2,5,6);
+$miArray = array("Ronaldo,Martincito");
 
 print_r($miArray);
 
