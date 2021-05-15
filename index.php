@@ -1,6 +1,9 @@
 <?php  
 require_once("index.html");
 
+if ($_GET)
+{
+
 if (is_numeric ($_GET['Numero'])&& $_GET['Numero'] > 1 && $_GET['Numero']== round($_GET['Numero'],0))
 {
 	
@@ -13,7 +16,7 @@ else
 	
 }
 
-
+}
 ?>
 
 
