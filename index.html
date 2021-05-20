@@ -1,0 +1,145 @@
+<html>
+
+
+<head>
+<meta charset="utf-8">
+<title>Enviar Correo Electronico.</title>
+<script src="jQuery.js"> </script>
+
+<link rel="stylesheet" type="text/css" href="Index.css">
+
+</head>
+
+
+
+<body>
+
+<div id="FormularioContacto"> 
+
+<h1>Contacta con Nosotros</h1>
+
+<div id="ContainerEmail"> 
+<p>Direccio  de Email</p>
+<input id="Email" type="text" placeholder="Introduce Email"></input>
+<p id="parrafoGris">Nunca compartitemos tu informacion Con nadie</p>
+
+</div>
+
+<div id="ContainerAsunto"> 
+<p>Asunto</p>
+<input id="Asunto"></input>
+</div>
+
+
+<div id="ContainerPregunta"> 
+<p>Que te Gustaria preguntarnos? </p>
+<textarea id="Descripcion"></textarea>
+</div>
+
+<div id="ContainerBoton">
+
+ <input id="Boton" type="submit"></input>
+
+</div >
+
+
+<div id="ParrafoVacio"></div>
+<div id="ParrafoCorrecto"></div>
+<div id="Div"> <p id="ParrafoEmail"></p>   </div>
+<img src="Imagenes/Flecha.png " id="FlechaImagenes" width="32px">
+
+
+<script type="text/javascript">
+
+ function isEmail(email) 
+  {	
+  var regex = /^([a-zA-Z0-9_.+-])+\@(([a-zA-Z0-9-])+\.)+([a-zA-Z0-9]{2,4})+$/;
+  return regex.test(email);
+  }
+
+
+$("#Boton").click (function ()
+{
+var CampoVacio ="";
+var MensajeError ="";
+var emailNo="";
+var Emails = $("#Email").val();
+
+//EMAIL
+if ($("#Email").val()  == "")
+{
+
+CampoVacio = CampoVacio + "Campo Email Obligatorio <br>";
+
+}
+
+//Asunto
+
+if ($("#Asunto").val () == "")
+{
+
+ CampoVacio = CampoVacio + "Campo Asunto obligatorio <br>";
+
+}
+
+//Descripcion
+
+   if ($("#Descripcion").val ()== "")
+   {
+   CampoVacio = CampoVacio + "Campo Descripcion Obligatorio <br>"
+   }
+  
+  
+  
+  //Validar Email
+  if (isEmail($("#Email").val()) == false)
+ {
+ 
+emailNo = emailNo + "<p>Tu email No es valido.Intente Agregar a " + Emails + "  un @ y un .com</p>";
+ 
+ }
+ 
+ 
+  
+  if (CampoVacio!="")
+  {
+   MensajeError = "<b>Hay algun error en el formulario </b> <br>" + CampoVacio+MensajeError;
+  }
+ 
+  
+  //Poner texto en parrafo
+  
+ 
+if (MensajeError!="" || emailNo!="")
+{
+  $("#ParrafoVacio").html(MensajeError);
+  $("#ParrafoEmail").html(emailNo);
+  $("#FlechaImagenes").css ("display","block");
+  $("#ParrafoVacio").css("padding" , "20px");
+  $("#ParrafoEmail").css ("border-style","solid");
+ 
+ if (emailNo!="")
+ {
+    $("#ParrafoVacio").css("padding" , "0px");
+ }
+ 
+} 
+else
+{
+ $("#ParrafoCorrecto").html ("Tu mensajea sido enviado correctamente.Le responderemos a la brevededad");
+ $("#ParrafoEmail").css ("display","none");
+ $("#Div").css ("border-style","none");
+ $("#ParrafoVacio").css ("display","none");
+ $("#ParrafoCorrecto").css ("padding","20px");
+ $("#FlechaImagenes").css ("display","none");
+ 
+
+}
+
+})
+
+ </script>
+
+</body>
+
+</html>

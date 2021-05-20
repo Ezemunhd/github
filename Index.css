@@ -1,0 +1,121 @@
+#FormularioContacto
+{
+	
+
+    margin: 10px 100px 400px 250px;
+
+	
+}
+
+
+
+input
+{
+	
+	width:800px;
+	height:40px;
+	border-radius:5px;
+	font-family:sans-serif;
+	
+}
+
+textarea
+{
+	
+height:100px;
+width:800;
+	
+}
+
+
+
+
+#Boton
+{
+	
+	width:80px;
+	margin:15px 0px;
+	background-color:#3812b5	;
+	color:white;
+	
+}
+
+
+
+p
+{
+font-family:sans-serif;
+ color:black;	
+	
+}
+
+#parrafoGris
+{
+	
+	font-size:12px;
+	color:gray;
+	margin:8px 0px 0px 0px;
+	
+}
+
+h1
+{
+	
+	font-family:sans-serif;
+	margin:0px 0px 0px 0px;
+	
+}
+
+
+
+
+#ParrafoVacio
+{
+	
+	background-color:#ff8880;
+	font-family:sans-serif;
+    font-size:20px;
+	border-radius:20px;
+	color:black;
+	
+}
+
+#ParrafoCorrecto 
+{
+	
+	background-color:#92f28d;
+	font-size:30px;
+    border-radius:20px;
+	
+}
+	
+#ParrafoEmail
+{
+	
+	text-align:center;
+	padding:2px;
+	border-radius:20px;
+ 
+	
+		 
+		
+}
+
+#Div
+{
+	
+	position:absolute;
+	top:10px; 
+	left:1100px;
+	width:200px;
+	height:68px;
+}
+
+#FlechaImagenes
+{
+	position:absolute;
+	top:90px;
+	left:1060px;
+	display:none;
+
+}
