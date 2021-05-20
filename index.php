@@ -28,7 +28,12 @@ if ($_POST)
 	 
  }
  
-
+ if ($_POST["Email"] && filter_var($_POST["Email"],FILTER_VALIDATE_EMAIL)== false)
+ {
+	 
+	 $Error .="Tu correo electronico no es valido.<br>"
+	  
+ }
  
  if ($Error!="")
 {
