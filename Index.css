@@ -67,16 +67,21 @@ h1
 }
 
 
-
+#Incorrecto
+{
+		background-color:#ff8880;
+		border-radius:20px;
+		
+}
 
 #ParrafoVacio
 {
 	
-	background-color:#ff8880;
 	font-family:sans-serif;
     font-size:20px;
 	border-radius:20px;
-	color:black;
+	color:black;	
+	
 	
 }
 

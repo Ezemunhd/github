@@ -43,7 +43,7 @@
 </div >
 
 
-<div id="ParrafoVacio"></div>
+<div id="Incorrecto"><p id="ParrafoVacio"></p></div>
 <div id="ParrafoCorrecto"></div>
 <div id="Div"> <p id="ParrafoEmail"></p>   </div>
 <img src="Imagenes/Flecha.png " id="FlechaImagenes" width="32px">
@@ -109,20 +109,17 @@ emailNo = emailNo + "<p>Tu email No es valido.Intente Agregar a " + Emails + "  
   
   //Poner texto en parrafo
   
+
  
+
 if (MensajeError!="" || emailNo!="")
 {
   $("#ParrafoVacio").html(MensajeError);
   $("#ParrafoEmail").html(emailNo);
   $("#FlechaImagenes").css ("display","block");
-  $("#ParrafoVacio").css("padding" , "20px");
+  $("#ParrafoVacio").css("margin" , "20px");
+  
   $("#ParrafoEmail").css ("border-style","solid");
- 
- if (emailNo!="")
- {
-
- }
- 
 } 
 else
 {
@@ -133,8 +130,9 @@ else
  $("#ParrafoCorrecto").css ("padding","20px");
  $("#FlechaImagenes").css ("display","none");
  
-
 }
+
+
 
 })
 
