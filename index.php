@@ -51,13 +51,13 @@ $headers = "From:".$_POST["Email"];
 if (mail($Destinatario, $Subject, $Mensaje, $headers))
 {
 	
-	echo "Mensaje enviado correctamente";
+	echo "<script>alert='Mensaje enviado correctamente'</script>";
 	
 }
 else
 {
 	
-	echo "Mensaje incorrecto";
+	echo "<script>alert='Mensaje incorrecto'</script>";
 	
 }
 
