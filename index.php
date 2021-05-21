@@ -1,5 +1,5 @@
 <?php  
-$destinatarios = "hola@alexcdesign.com";
+$destinatarios = "viciconteezequiel@gmail.com";
 $Asunto = "Hola como es que estan gente";
 $Mensaje = "Esto es un prueba para ver si funcoiona.";
 $Email = "Example@hotmail.com";
