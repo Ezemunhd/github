@@ -14,7 +14,15 @@ if ($_POST)
 	 
  }
  
-
+ if (!$_POST["Asunto"])
+ {
+	 
+	 $Error .="Es obligatorio Poner un asunto en el correo.<br>";
+	 
+ }
+ 
+ 		 
+}
  
 	
 }
