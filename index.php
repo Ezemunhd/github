@@ -8,7 +8,7 @@ $header = "Enviado de juegos Ps4";
 $MensajeCompleto =$Mensaje."\n Atentamente:";
 
 mail($destinatarios, $Asunto, $MensajeCompleto, $header);
-echo "enviado correcto";
+echo "enviado correctooo";
 echo "mal";
 ?>
 
