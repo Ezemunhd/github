@@ -17,21 +17,6 @@
 
 
 
-{
-	
-	echo "mensaje enviado";
-	
-}
-else
-{
-	
-	echo "Hubo un error";
-	
-}
-
-
-
-?>
 
 
 
