@@ -1,25 +1,70 @@
 <?php  
-    header("Content-type: text/html;charset=\"utf-8\"");
-    $emailTo = "correoajoseluis@gmail.com";
-    $subject = "Curso Desarrollo Web Completo";
-    $body = "Me está encantando el curso!";
-    $headers = "From: joseluis@example.com";
+require_once("index.html");
 
-    if (mail($emailTo,$subject,$body,$headers))
-    {
-        echo "Mensaje enviado con éxito!";
-    }
-    else
-    {
-        echo "Hubo un error al enviar el mensaje";
-    }
-    
+$Error ="";
+$MensajeExitoso="";
+
+if ($_POST)
+	
+{
+	
+ if (!$_POST["Email"])
+ {
+	 $Error .="Es obligatorio  una direccion de  email.<br>";	
+	 
+ }
+ 
+ if (!$_POST["Asunto"])
+ {
+	 
+	 $Error .="Es obligatorio Poner un asunto en el correo.<br>";
+	 
+ }
+ 
+ if (!$_POST["Descripcion"])
+ {
+	 
+	 $Error .="Es obligatorio agregar el contenido <br>";
+	 
+ }
+ 
+ if ($_POST["Email"] && filter_var($_POST["Email"],FILTER_VALIDATE_EMAIL)== false)
+ {
+	 
+	 $Error .="Tu correo electronico no es valido.<br>";
+	  
+ }
+ 
+ if ($Error!="")
+{
+
+   $Error = "Hubo un error en alguno es estos campos".$Error;
+       			
+}
+else
+{
+$EmailTo ="viciconteezequiel@gmail.com";
+$Subject = $_POST['Asunto'];
+$body = $_POST['Descripcion'];
+$headers = "From:".$_POST['Email'];
+if (mail($EmailTo,$Subject,$body,$headers))
+{
+	
+	$MensajeExitoso = "Su mensaje fue enviado con exito";
+	
+}	
+else
+{
+	
+	$Error = "Hubo un error en el formulario".Error;
+	
+}	
+	
+}
+ 
+}
+
+
+
 ?>
-
-
-
-
-
-
-
 
