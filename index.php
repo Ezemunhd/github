@@ -47,7 +47,8 @@ $Destinatario = 'viciconteezequiel@gmail.com';
 $Subject = $_POST['Asunto'];
 $Mensaje= $_POST['Descripcion'];
 $headers = "From:".$_POST['Email'];
-(mail($Destinatario,$Subject,$Mensaje,$headers);
+
+mail($Destinatario,$Subject,$Mensaje,$headers);
 
 }
  
