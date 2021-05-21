@@ -1,13 +1,11 @@
 <?php  
-$cabeceras  = 'MIME-Version: 1.0' . "\r\n";
-$cabeceras .= 'Content-type: text/html; charset=iso-8859-1' . "\r\n";
+// El mensaje
+$mensaje = "Línea 1\r\nLínea 2\r\nLínea 3";
 
-    $emailTo = "viciconteezequiel@gmail.com";
-    $subject = "Curso Desarrollo Web Completo";
-    $message = "Me está encantando el curso!";
-    $headers = "From: ezevici123@gmail.com";
+// Si cualquier línea es más larga de 70 caracteres, se debería usar wordwrap()
+$mensaje = wordwrap($mensaje, 70, "\r\n");
 
-    if (mail($emailTo,$subject,$message,$headers))
+    if (mail('caffeinated@example.com', 'Mi título', $mensaje);)
     {
         echo "Mensaje enviado con éxito!";
     }
