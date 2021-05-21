@@ -2,9 +2,9 @@
 
 
 $EmailTo ="viciconteezequiel@gmail.com";
-$Subject = $_POST['Asunto'];
-$body = $_POST['Descripcion'];
-$headers = "From:".$_POST['Email'];
+$Subject = "Hola";
+$body = "holis pa";
+$headers = "From: viciconteezequiel@gmail";
 if (mail($EmailTo,$Subject,$body,$headers))
 {
 	
