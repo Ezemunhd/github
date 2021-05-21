@@ -5,7 +5,15 @@ $Error ="";
 $MensajeExitoso="";
 
 if ($_POST)
-{	
+	
+{
+	
+ if (!$_POST["Email"])
+ {
+	 $Error .="Es obligatorio  una direccion de  email.<br>";	
+	 
+ }
+ 
 
  
 	
