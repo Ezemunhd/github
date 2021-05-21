@@ -13,7 +13,7 @@ if (mail($destinatarios, $Asunto, $MensajeCompleto, $header))
 else
 {
 	
-	echo "Todo mal pa";
+	echo "Todo mal paa";
 	
 }
 
