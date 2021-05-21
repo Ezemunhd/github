@@ -1,21 +1,71 @@
 <?php  
-$destinatarios = "viciconteezequiel@gmail.com";
-$Asunto = "Hola como es que estan gente";
-$Mensaje = "Esto es un prueba para ver si funcoiona.";
-$Email = "From: Example@hotmail.com";
+require_once("index.html");
 
+$Error ="";
+$MensajeExitoso="";
 
-if (mail($destinatarios, $Asunto, $MensajeCompleto, $header))
+if ($_POST)
+	
 {
 	
-	echo"Enviado correctamente";
+ if (!$_POST["Email"])
+ {
+	 $Error .="Es obligatorio  una direccion de  email.<br>";	
+	 
+ }
+ 
+ if (!$_POST["Asunto"])
+ {
+	 
+	 $Error .="Es obligatorio Poner un asunto en el correo.<br>";
+	 
+ }
+ 
+ if (!$_POST["Descripcion"])
+ {
+	 
+	 $Error .="Es obligatorio agregar el contenido <br>";
+	 
+ }
+ 
+ if ($_POST["Email"] && filter_var($_POST["Email"],FILTER_VALIDATE_EMAIL)== false)
+ {
+	 
+	 $Error .="Tu correo electronico no es valido.<br>";
+	  
+ }
+ 
+ if ($Error!="")
+{
+
+   $Error = "Hubo un error en alguno es estos campos".$Error;
+       			
+}
+else
+{
+$Destinatario = 'viciconteezequiel@gmail.com';
+$Subject = $_POST["Asunto"];
+$Mensaje= $_POST["Descripcion"];
+$headers = "From:".$_POST["Email"];
+
+if (mail($Destinatario, $Subject, $Mensaje, $headers))
+{
+	
+	echo "Mensaje enviado correctamente";
+	
 }
 else
 {
 	
-	echo "Todo mal paa";
+	echo "Mensaje incorrecto";
 	
 }
+
+}
+ 
+}
+
+
 
 ?>
 
