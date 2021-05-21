@@ -7,8 +7,17 @@ $Email = "Example@hotmail.com";
 $header = "Enviado de juegos Ps4";
 $MensajeCompleto =$Mensaje."\n Atentamente:";
 
-mail($destinatarios, $Asunto, $MensajeCompleto, $header);
-echo "enviado correctooo";
-echo "mal";
+if (mail($destinatarios, $Asunto, $MensajeCompleto, $header))
+{
+	
+	echo"Enviado correctamente";
+}
+else
+{
+	
+	echo "Todo mal pa";
+	
+}
+
 ?>
 
