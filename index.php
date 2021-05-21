@@ -1,5 +1,4 @@
 <?php  
-<?php
 $para      = 'viciconteezequiel@gmail.com';
 $titulo    = 'El título';
 $mensaje   = 'Hola';
@@ -17,5 +16,5 @@ else
 }
 
 ?>
-?>
+
 
