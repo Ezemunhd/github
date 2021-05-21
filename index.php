@@ -39,22 +39,33 @@ if ($_POST)
 {
 
    $Error = "Hubo un error en alguno es estos campos".$Error;
-       		 
+       			
 }
- 
-}
-
+else
+{
 $EmailTo ="viciconteezequiel@gmail.com";
 $Subject = $_POST['Asunto'];
 $body = $_POST['Descripcion'];
-$headers = $_POST['Email'];
+$headers = "From: ".$_POST['Email'];
 
 if (mail($EmailTo,$Subject,$body,$headers))
 {
 	
 	$MensajeExitoso = "Su mensaje fue enviado con exito";
 	
+}	
+else
+{
+	
+	$Error = "Hubo un error en el formulario".Error;
+	
+}	
+	
 }
+ 
+}
+
+
 
 ?>
 
