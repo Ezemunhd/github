@@ -11,7 +11,7 @@ $mensaje = wordwrap($mensaje, 70, "\r\n");
     }
     else
     {
-        echo "Hubo un error al enviar el mensajes";
+        echo "Hubo un error al enviar el mensaje";
     }
 
 ?>
