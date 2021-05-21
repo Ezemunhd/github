@@ -9,10 +9,7 @@
     $headers = "From:" . $from;
     mail($to,$subject,$message, $headers);
 	echo "Correo enviado";
-	}else
-	{
-	 echo "Problema al enviar";	
-	}
+	
 ?>
 
 
