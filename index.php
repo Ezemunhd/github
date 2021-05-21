@@ -50,7 +50,7 @@ $email = "From:".$_POST['Email'];
 
 $header ="Enviado de JuegosDigitales"; 
 mail($Destinatario, $Subject, $Mensaje, $header);
-echo "<script>alert("Correo enviado correctamente")</script>"
+echo "<script>alert("Correo enviado correctamente")</script>";
 
 }
  
