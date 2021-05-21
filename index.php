@@ -7,8 +7,14 @@
     $subject = "Prueba de envio de email con PHP";
     $message = "Esto es un email de prueba enviado con PHP";
     $headers = "From:" . $from;
-    mail($to,$subject,$message, $headers);
+    if (mail($to,$subject,$message, $headers))
+	{
     echo "Email enviado!!";
+	}
+	else
+	{
+		echo "Email vacio";
+	}
 ?>
 
 
