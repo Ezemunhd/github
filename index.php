@@ -1,5 +1,4 @@
 <?php  
-<?php
     header("Content-type: text/html;charset=\"utf-8\"");
     $emailTo = "correoajoseluis@gmail.com";
     $subject = "Curso Desarrollo Web Completo";
