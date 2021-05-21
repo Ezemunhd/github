@@ -5,7 +5,7 @@ $Error ="";
 $MensajeExitoso="";
 
 if ($_POST)
-	
+{	
 
  
 	
