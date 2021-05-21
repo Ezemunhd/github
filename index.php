@@ -43,23 +43,20 @@ if ($_POST)
 }
 else
 {
-$Destinatario = 'viciconteezequiel@gmail.com';
-$Subject = $_POST["Asunto"];
-$Mensaje= $_POST["Descripcion"];
-$headers = "From:".$_POST["Email"];
 
-if (mail($Destinatario, $Subject, $Mensaje, $headers))
-{
-	
-	echo "<script>alert='Mensaje enviado correctamente'</script>";
-	
-}
-else
-{
-	
-	echo "<script>alert='Mensaje incorrecto'</script>";
-	
-}
+    $emailTo = "correoajoseluis@gmail.com";
+    $subject = "Curso Desarrollo Web Completo";
+    $body = "Me está encantando el curso!";
+    $headers = "From: joseluis@example.com";
+
+    if (mail($emailTo,$subject,$body,$headers))
+    {
+        echo "Mensaje enviado con éxito!";
+    }
+    else
+    {
+        echo "Hubo un error al enviar el mensaje";
+    }
 
 }
  
