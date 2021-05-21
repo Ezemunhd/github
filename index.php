@@ -35,7 +35,13 @@ if ($_POST)
 	  
  }
  
+ if ($Error!="")
+{
 
+   $Error = "Hubo un error en alguno es estos campos".$Error;
+       		 
+}
+ 
 	
 }
 
