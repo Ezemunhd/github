@@ -1,18 +1,22 @@
 <?php  
 
+$EmailTo = "viciconteezequiel@gmail.com";
+$subject = "hola mundo";
+$body = "Que tal andangente";
+$headers = "From: presidenteperon@hotmail.com";
 
-$EmailTo ="viciconteezequiel@gmail.com";
-$Subject = "Hola";
-$body = "holis pa";
-$headers = "From: viciconteezequiel@gmail";
-if (mail($EmailTo,$Subject,$body,$headers))
+if (mail ($EmailTo,$subject,$body,$headers))
 {
 	
-	$MensajeExitoso = "Su mensaje fue enviado con exito";
+	echo "mensaje enviado";
 	
-}	
-
-
+}
+else
+{
+	
+	echo "Hubo un error";
+	
+}
 
 
 
