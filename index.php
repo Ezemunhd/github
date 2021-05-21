@@ -21,8 +21,13 @@ if ($_POST)
 	 
  }
  
- 		 
-
+ if (!$_POST["Descripcion"])
+ {
+	 
+	 $Error .="Es obligatorio agregar el contenido <br>";
+	 
+ }
+ 
  
 	
 }
