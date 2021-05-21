@@ -13,7 +13,7 @@ $cabeceras .= 'Content-type: text/html; charset=iso-8859-1' . "\r\n";
     }
     else
     {
-        echo "Hubo un error al enviar el mensaje";
+        echo "Hubo un error al enviar el mensajee";
     }
 
 ?>
