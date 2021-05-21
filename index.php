@@ -46,9 +46,10 @@ else
 $Destinatario = 'viciconteezequiel@gmail.com';
 $Subject = $_POST['Asunto'];
 $Mensaje= $_POST['Descripcion'];
-$headers = "From:".$_POST['Email'];
+$email = "From:".$_POST['Email'];
 
-mail($Destinatario, $Subject, $Mensaje, $headers);
+$header ="Enviado de JuegosDigitales"; 
+mail($Destinatario, $Subject, $Mensaje, $header);
 echo "<script>alert("Correo enviado correctamente")</script>"
 
 }
