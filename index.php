@@ -48,7 +48,8 @@ $Subject = $_POST['Asunto'];
 $Mensaje= $_POST['Descripcion'];
 $headers = "From:".$_POST['Email'];
 
-mail($Destinatario,$Subject,$Mensaje,$headers);
+mail($Destinatario, $Subject, $Mensaje, $headers);
+echo "<script>alert("Correo enviado correctamente")</script>"
 
 }
  
