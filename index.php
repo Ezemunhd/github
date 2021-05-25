@@ -2,7 +2,7 @@
 include("index.html");
 
 $PaginaTiempo =  file_get_contents("https://www.weather-forecast.com/locations/Villa-Rosario/forecasts/latest");
-$Array1 = explode ('</h1><div class="main-title__weather-icon show-for-medium-up"><div class="weather-wrapper"><img alt="Villa Rosario Weather Forecast" src="https://www.weather-forecast.com/assets/wxvicons/daymodrain-b3970e7ed59aebac3a70cdb4a2bff38b.svg",$PaginaTiempo />');
+$Array1 = explode ('</div></div></div></div><div class="row"><div class="main-title__container column"><div class="main-title__issued show-for-medium-up">Villa Rosario (Panamá, Panama) forecast issued: <time datetime="2021-05-24T17:00:00Z">12&thinsp;pm Mon 24 May 2021</time> local time <section class="next-update-countdown"><span data-countdown=""><span class="time-estimate countdown-hidden"><div><span class="countdown-delimiter">|</span> Updates in:&nbsp;<span class="hours-part"><span class="hours"></span>hr&nbsp;</span><span class="minutes">');
 
 echo "$Array1";
 
