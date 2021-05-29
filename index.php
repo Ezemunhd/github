@@ -43,9 +43,10 @@ $PrevicionTiempo =  $Array2[0];
 <div id="PrevicionTiempo">
  <?php
 
-
+if ($PrevicionTiempo)
+{	
 echo $PrevicionTiempo;
-
+}
 ?>
 </div>
 
