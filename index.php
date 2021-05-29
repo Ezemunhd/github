@@ -72,7 +72,7 @@ $PrevicionTiempo =  $Array2[0];
 	transition:all 0.5s;
 
 }
-#Boton :hover
+#Boton:hover
 {
 	background:#061d7a;
 }
