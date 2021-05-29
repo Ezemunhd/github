@@ -83,6 +83,7 @@ h1
    text-align:center;
    background-color:#a7f09c;
    padding:10px;
+   align-items:center;
 }
 
 </style>
