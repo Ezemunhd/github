@@ -8,7 +8,7 @@ $PrevicionTiempo = "";
 
 $PaginaTiempo =  file_get_contents("https://www.weather-forecast.com/locations/Villa-Rosario/forecasts/latest");
 
-$Array1 = explode ('>Villa Rosario Weather Today</h2> (1&ndash;3 days):</div><p class="location-summary__text"><span class="phrase">',$PaginaTiempo);
+$Array1 = explode ('Weather Today</h2> (1&ndash;3 days):</div><p class="location-summary__text"><span class="phrase">',$PaginaTiempo);
 
 $Array2= explode ('</div><div class="location-summary__item location-summary__item--js is-truncated"><div class="location-summary__heading-with-ext"><h2 class="location-summary__heading">Villa Rosario Weather</h2>',$Array1[1]);
 
