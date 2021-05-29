@@ -78,7 +78,7 @@ h1
 {
      position:relative;
    top:-90px;
-   left:500px;
+   left:450px;
    width:400px;
    text-align:center;
   
