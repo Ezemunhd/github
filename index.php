@@ -109,7 +109,7 @@ h1
 <span id="TiempoContainer"><h1>¿Que Tiempo hace?</h1> 
 <p id="NombreCiud">Introduce el Nombre de tu ciudad:</p></span>
 
-<input id="InputCiudad" placeholder="Por ej.Villa rosa"></input><br>
+<input type="text" name="InputCiudad" id="InputCiudad" placeholder="Por ej.Villa rosa"></input><br>
 <span id="BotonContainer"><input id="Boton" type="submit"></input></span>
 
 </form>
