@@ -7,7 +7,7 @@ $Error="";
 
 $PrevicionTiempo = "";
 
-$PaginaTiempo =  file_get_contents("https://www.weather-forecast.com/locations/Villa-Rosario/forecasts/latest");
+$PaginaTiempo =  file_get_contents("https://www.weather-forecast.com/locations/".$_GET['InputCiudad']."/forecasts/latest");
 
 $Array1 = explode ('>Villa Rosario Weather Today</h2> (1&ndash;3 days):</div><p class="location-summary__text"><span class="phrase">',$PaginaTiempo);
 
