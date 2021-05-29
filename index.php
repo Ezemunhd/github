@@ -29,10 +29,9 @@ $PrevicionTiempo =  $Array2[0];
 #PrevicionTiempo
 {
 
-   width:400px;
-   text-align:center;
+
    background-color:#a7f09c;
-   padding:10px;
+
 }
 
 </style>
