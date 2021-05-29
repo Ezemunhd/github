@@ -88,7 +88,6 @@ h1
    text-align:center;
    background-color:#a7f09c;
    padding:10px;
-   align-items:center;
 }
 
 </style>
@@ -102,7 +101,7 @@ h1
 <form id="ClimaContainer">
  
 <span id="TiempoContainer"><h1>¿Que Tiempo hace?</h1> 
-<p id=""NombreCiud>Introduce el Nombre de tu ciudad:</p></span>
+<p id="NombreCiud">Introduce el Nombre de tu ciudad:</p></span>
 
 <input id="InputCiudad" placeholder="Por ej.Villa rosa"></input><br>
 <span id="BotonContainer"><input id="Boton" type="submit"></input></span>
