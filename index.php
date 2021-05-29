@@ -76,7 +76,8 @@ h1
 
 #PrevicionTiempo
 {
-	background-color:red;
+   position relative;
+   top 100px
 }
 
 </style>
