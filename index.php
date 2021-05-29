@@ -24,14 +24,70 @@ $PrevicionTiempo =  $Array2[0];
 
 
 <style type="text/css">
+#ClimaContainer
+{
+	text-align:center;
+	padding:120px;
+
+
+}
+
+#NombreCiud
+{
+	position:relative;
+	top:-28px;
+	font-size:20px;
+	font-family:cursive;
+	
+	
+}
+
+#InputCiudad
+{
+	width:500px;
+	height:40px;
+	border-radius:5px;	
+	font-size:20px;
+		border-style:none;
+}
+
+#Boton
+{
+	background-color:#4884d4;
+	border-radius:10px;
+	color:white;
+	font-size:18px;
+	font-family:sans-serif;
+	margin:50px;
+	width:80px;
+	height:40px;
+	border-style:none;
+	transition:all 0.5s;
+
+}
+#Boton :hover
+{
+	background:#061d7a;
+}
+
+h1
+{
+	font-size:50px;
+	font-family:fantasy;
+	
+}
+
 
 
 #PrevicionTiempo
 {
-
-
+    position:relative;
+   top:-168px;
+   left:470px;
+   width:400px;
+   text-align:center;
    background-color:#a7f09c;
-
+   padding:10px;
 }
 
 </style>
