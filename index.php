@@ -89,7 +89,7 @@ h1
 
 <form id="ClimaContainer">
  
-<span id="TiempoContainer"><h1>¿Que Tiempo hacee?</h1> 
+<span id="TiempoContainer"><h1>¿Que Tiempo hace?</h1> 
 <p>Introduce el Nombre de tu ciudad:</p></span>
 
 <input id="InputCiudad" placeholder="Por ej.Villa rosa"></input><br>
