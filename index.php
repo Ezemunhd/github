@@ -78,7 +78,7 @@ h1
 {
 
    width:400px;
-   text-align:center;
+  
    background-color:#96f587;
    border-radius:10px;
    padding:10px;
