@@ -32,7 +32,7 @@ $PrevicionTiempo =  $Array2[0];
 
 }
 
-p
+#NombreCiud
 {
 	position:relative;
 	top:-28px;
@@ -62,7 +62,12 @@ p
 	width:80px;
 	height:40px;
 	border-style:none;
+	transition:all 0.5s;
 
+}
+#Boton :hover
+{
+	background:#061d7a;
 }
 
 h1
@@ -97,7 +102,7 @@ h1
 <form id="ClimaContainer">
  
 <span id="TiempoContainer"><h1>¿Que Tiempo hace?</h1> 
-<p>Introduce el Nombre de tu ciudad:</p></span>
+<p id=""NombreCiud>Introduce el Nombre de tu ciudad:</p></span>
 
 <input id="InputCiudad" placeholder="Por ej.Villa rosa"></input><br>
 <span id="BotonContainer"><input id="Boton" type="submit"></input></span>
