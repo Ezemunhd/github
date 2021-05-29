@@ -34,11 +34,8 @@ $PrevicionTiempo =  $Array2[0];
 
 p
 {
-	position:relative;
-	top:-28px;
-	font-size:20px;
-	font-family:cursive;
-	
+
+
 	
 }
 
