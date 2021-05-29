@@ -7,7 +7,7 @@ $PaginaTiempo =  file_get_contents("https://www.weather-forecast.com/locations/V
 
 $Array1 = explode ('<td class="b-forecast__table-description-cell--js" colspan="9"><div class="b-forecast__table-description-title">',$PaginaTiempo);
 
-$Array2= explode ('>Read More</a></div></div></div></div></section><section class="row expanded">',$Array1[1]);
+$Array2= explode ('</div><div class="location-summary__item location-summary__item--js is-truncated"><div class="location-summary__heading-with-ext"><h2 class="location-summary__heading">Villa Rosario Weather</h2>',$Array1[1]);
 
 $PrevicionTiempo =  $Array2[0];
 
