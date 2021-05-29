@@ -81,9 +81,9 @@ h1
    left:470px;
    width:400px;
    text-align:center;
-   background-color:#89f578;
+   background-color:#96f587;
    border-radius:10px;
-
+   padding:10px;
 }
 
 </style>
