@@ -81,7 +81,7 @@ h1
    left:470px;
    width:400px;
    text-align:center;
-   background-color:#96f587;
+   background-color:#a7f09c;
    border-radius:10px;
    padding:10px;
 }
