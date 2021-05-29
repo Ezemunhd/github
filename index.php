@@ -67,7 +67,7 @@ p
 
 h1
 {
-	font-size:150px;
+	font-size:50px;
 	font-family:fantasy;
 	
 }
@@ -77,7 +77,6 @@ h1
 #PrevicionTiempo
 {
 	background-color:red;
-	font-size:200px;
 }
 
 </style>
