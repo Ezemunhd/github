@@ -77,8 +77,8 @@ h1
 #PrevicionTiempo
 {
      position:relative;
-   top:-120px;
-   left:455px;
+   top:-140px;
+   left:460px;
    width:400px;
    text-align:center;
   
