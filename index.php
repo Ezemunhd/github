@@ -24,7 +24,61 @@ $PrevicionTiempo =  $Array2[0];
 
 
 <style type="text/css">
+#ClimaContainer
+{
+	text-align:center;
+	padding:120px;
 
+
+}
+
+p
+{
+	position:relative;
+	top:-28px;
+	font-size:20px;
+	font-family:cursive;
+	
+	
+}
+
+#InputCiudad
+{
+	width:500px;
+	height:40px;
+	border-radius:5px;	
+	font-size:20px;
+		border-style:none;
+}
+
+#Boton
+{
+	background-color:#4884d4;
+	border-radius:10px;
+	color:white;
+	font-size:18px;
+	font-family:sans-serif;
+	margin:50px;
+	width:80px;
+	height:40px;
+	border-style:none;
+
+}
+
+h1
+{
+	font-size:150px;
+	font-family:fantasy;
+	
+}
+
+
+
+#PrevicionTiempo
+{
+	background-color:red;
+	font-size:200px;
+}
 
 </style>
 
