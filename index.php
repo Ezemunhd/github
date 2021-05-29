@@ -81,7 +81,7 @@ h1
    left:470px;
    width:400px;
    text-align:center;
-  font-size:50px; 
+  font-size:10px; 
 }
 
 </style>
