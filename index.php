@@ -22,7 +22,11 @@ $PrevicionTiempo =  $Array2[0];
 <title>¿Que tiempo hace?</title>
 <script src="jQuery.js"> </script>
 
-<link rel="stylesheet" type="text/css" href="Index.css">
+
+<style type="text/css">
+
+
+</style>
 
 </head>
 
