@@ -76,8 +76,12 @@ h1
 
 #PrevicionTiempo
 {
-   position relative;
-   top 100px
+     position:relative;
+   top:-90px;
+   left:230px;
+   width:400px;
+   text-align:center;
+  
 }
 
 </style>
