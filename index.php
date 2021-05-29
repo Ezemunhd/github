@@ -77,8 +77,7 @@ h1
 #PrevicionTiempo
 {
 
-   width:400px;
-  
+
    background-color:#96f587;
    border-radius:10px;
    padding:10px;
