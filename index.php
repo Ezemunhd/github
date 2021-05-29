@@ -11,7 +11,6 @@ $Array2= explode ('>Read More</a></div></div></div></div></section><section clas
 
 $PrevicionTiempo =  $Array2[0];
 
-echo $PrevicionTiempo;
 
 ?>
 
