@@ -93,7 +93,7 @@ h1
    width:400px;
    text-align:center;
    background-color:#a7f09c;
-   padding:10px;
+
 }
 
 </style>
@@ -127,6 +127,8 @@ echo $PrevicionTiempo;
 
 
 <script type="text/javascript">
+
+
 
 
 document.getElementById("Boton").onclick =  function()
