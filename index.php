@@ -142,7 +142,7 @@ if ($("#InputCiudad").val() =="")
 
 if  (Error != "")
 {
-	$("#ParrafoError").html (Error);
+	$("#ParrafoError").html ("Error");
 }
 	
 	
