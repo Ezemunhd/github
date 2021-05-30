@@ -124,7 +124,7 @@ echo $PrevicionTiempo;
 ?>
 </div>
 
-<div id="ParrafoError"></div>
+<div id="ParrafoError"> Hola que tal me llamo hernan conrodn</div>
 
 
 <script type="text/javascript">
@@ -153,7 +153,7 @@ if ($("#InputCiudad").val() =="")
 
 if  (Error != "")
 {
-	$("#ParrafoError").html ("Error");
+	$("#ParrafoError").html ("");
 }
 	
 	
