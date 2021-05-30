@@ -36,7 +36,7 @@ $PrevicionTiempo =  $Array2[0];
 
 <head>
 <meta charset="utf-8">
-<title>¿Que tiempo hace?</title>
+<title>¿Que tiempo hacee?</title>
 <script src="jQuery.js"> </script>
 
 
