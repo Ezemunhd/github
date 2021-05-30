@@ -67,7 +67,7 @@ h1
    text-align:center;
    background-color:#96f587;
    border-radius:10px;
-   padding:10px;
+
 
 }
 
@@ -92,13 +92,13 @@ background:#061d7a;
 <p id="NombreCiud">Introduce el Nombre de tu ciudad:</p></span>
 
 <input id="InputCiudad" placeholder="Por ej.Villa rosa"></input><br>
-<label placeholder="Introduce aqui tu pene"></label>
+
 <span id="BotonContainer"><input id="Boton" type="submit"></input></span>
 
 </form>
 
 <div id="PrevicionTiempo">
- <p id="PrevicionTiempo">
+ <p id="PrevicionTiempos">
 Fuerte lluvia (totál 42mm), más pesada durante la tarde de lunes. Cálido (máx 27 ° C el domingo por la mañana, min 22 ° C el sábado por la noche). El viento será generalmente ligero.</p>
 </div>
 
@@ -106,6 +106,12 @@ Fuerte lluvia (totál 42mm), más pesada durante la tarde de lunes. Cálido (máx 27
 
 <script type="text/javascript">
 
+document.getElementById("Boton").onclick =  function()
+{
+document.getElementById("PrevicionTiempo").style.padding = "10px";
+
+}
+ 
 
  </script>
 

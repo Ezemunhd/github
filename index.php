@@ -129,6 +129,13 @@ echo $PrevicionTiempo;
 <script type="text/javascript">
 
 
+document.getElementById("Boton").onclick =  function()
+{
+document.getElementById("PrevicionTiempo").style.padding = "10px";
+
+}
+ 
+
  </script>
 
 </body>
