@@ -10,7 +10,7 @@ $PrevicionTiempo = "";
 
 $Ciudad= str_replace(' ','',$_GET['InputCiudad']);
 
-$PaginaTiempo =  file_get_contents("https://www.weather-forecast.com/locations/".$_GET['InputCiudad']."/forecasts/latest");
+$PaginaTiempo =  file_get_contents("https://www.weather-forecast.com/locations/".Ciudad."/forecasts/latest");
 
 $Array1 = explode ('Weather Today</h2> (1&ndash;3 days):</div><p class="location-summary__text"><span class="phrase">',$PaginaTiempo);
 
@@ -29,7 +29,7 @@ $PrevicionTiempo =  $Array2[0];
 
 <head>
 <meta charset="utf-8">
-<title>¿Que tiempo hacee?</title>
+<title>¿Que tiempo hace?</title>
 <script src="jQuery.js"> </script>
 
 
