@@ -3,20 +3,27 @@
 
 
 $Error="";
-
-
-
 $PrevicionTiempo = "";
-
 $Ciudad= str_replace(' ','',$_GET['InputCiudad']);
+$file = "https://www.weather-forecast.com/locations/".$Ciudad."/forecasts/latest";
+$file_headers = @get_headers($file);
+if(!$file_headers || $file_headers[0] == 'HTTP/1.1 404 Not Found') {
+    
+	$Error="La  Ciudad  Que a introducido No existe";
+}
+else {
 
-$PaginaTiempo =  file_get_contents("https://www.weather-forecast.com/locations/".$Ciudad."/forecasts/latest");
+$PaginaTiempo =  file_get_contents($file);
 
 $Array1 = explode ('Weather Today</h2> (1&ndash;3 days):</div><p class="location-summary__text"><span class="phrase">',$PaginaTiempo);
 
 $Array2= explode ('</div><div class="location-summary__item location-summary__item--js is-truncated"><div class="location-summary__heading-with-ext"><h2 class="location-summary__heading">Villa Rosario Weather</h2>',$Array1[1]);
 
 $PrevicionTiempo =  $Array2[0];
+
+}
+
+
 
 
 
