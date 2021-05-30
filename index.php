@@ -106,7 +106,7 @@ h1
 
 <form id="ClimaContainer">
  
-<span id="TiempoContainer"><h1>¿Que Tiempo hace?</h1> 
+<span id="TiempoContainer"><h1>¿Que Tiempo hacee?</h1> 
 <p id="NombreCiud">Introduce el Nombre de tu ciudad:</p></span>
 
 <input type="text" name="InputCiudad" id="InputCiudad" placeholder="Por ej.Villa rosa"></input><br>
@@ -128,6 +128,17 @@ echo $PrevicionTiempo;
 
 
 <script type="text/javascript">
+
+
+if (typeof JQuery == "undefined")
+{
+	alert ("Jquery no esta instalado");
+	
+}
+else
+{
+	alert("Jquery esta instalado");
+}
 
 
 $("#Boton").submit (function (){
