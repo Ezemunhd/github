@@ -2,9 +2,13 @@
 
 
 
+$Error="";
+
 
 
 $PrevicionTiempo = "";
+
+$Ciudad= str_replace(' ','',$_GET['InputCiudad']);
 
 $PaginaTiempo =  file_get_contents("https://www.weather-forecast.com/locations/".$_GET['InputCiudad']."/forecasts/latest");
 
@@ -25,7 +29,7 @@ $PrevicionTiempo =  $Array2[0];
 
 <head>
 <meta charset="utf-8">
-<title>¿Que tiempo hace?</title>
+<title>¿Que tiempo hacee?</title>
 <script src="jQuery.js"> </script>
 
 
