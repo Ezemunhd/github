@@ -124,40 +124,11 @@ echo $PrevicionTiempo;
 ?>
 </div>
 
-<div id="ParrafoError"> Hola que tal me llamo hernan conrodn</div>
+<div id="ParrafoError"></div>
 
 
 <script type="text/javascript">
 
-
-if (typeof jQuery == "undefined")
-{
-	alert ("Jquery no esta instalado");
-	
-}
-else
-{
-	alert("Jquery esta instalado");
-}
-
-
-$("#Boton").submit (function (){
-	
-	var Error="";
-    var MensajeError="";
- 
-if ($("#InputCiudad").val() =="")
-{
-	Error += "Campo de Ciudad Vacio.<br>";
-}	
-
-if  (Error != "")
-{
-	$("#ParrafoError").html ("");
-}
-	
-	
-})
  
 
  </script>
