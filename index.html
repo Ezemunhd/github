@@ -88,7 +88,7 @@ background:#061d7a;
 
 <form id="ClimaContainer">
  
-<span id="TiempoContainer"><h1>¿Que Tiempo hace?</h1> 
+<span id="TiempoContainer"><h1>¿Que Tiempo hacee?</h1> 
 <p id="NombreCiud">Introduce el Nombre de tu ciudad:</p></span>
 
 <input id="InputCiudad" placeholder="Por ej.Villa rosa"></input><br>
@@ -106,12 +106,16 @@ Fuerte lluvia (totál 42mm), más pesada durante la tarde de lunes. Cálido (máx 27
 
 <script type="text/javascript">
 
-document.getElementById("Boton").onclick =  function()
+if (typeof jQuery == "undefined")
 {
-document.getElementById("PrevicionTiempo").style.padding = "10px";
-
+	alert ("Jquery no esta instalado");
+	
 }
- 
+else
+{
+	alert("Jquery esta instalado");
+}
+
 
  </script>
 
