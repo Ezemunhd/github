@@ -124,18 +124,29 @@ echo $PrevicionTiempo;
 ?>
 </div>
 
+<div id="ParrafoError"></div>
 
 
 <script type="text/javascript">
 
 
-
-
-document.getElementById("Boton").onclick =  function()
+$("#Boton").submit (function (){
+	
+	var Error="";
+    var MensajeError="";
+ 
+if ($("#InputCiudad").val() =="")
 {
-document.getElementById("PrevicionTiempo").style.padding = "10px";
+	Error += "Campo de Ciudad Vacio.<br>";
+}	
 
+if  (Error != "")
+{
+	$("#ParrafoError").html (Error);
 }
+	
+	
+})
  
 
  </script>
