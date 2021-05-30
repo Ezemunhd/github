@@ -130,7 +130,7 @@ echo $PrevicionTiempo;
 <script type="text/javascript">
 
 
-if (typeofjQuery == "undefined")
+if (typeof jQuery == "undefined")
 {
 	alert ("Jquery no esta instalado");
 	
