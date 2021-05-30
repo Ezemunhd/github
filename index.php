@@ -132,10 +132,7 @@ if ($PrevicionTiempo)
 {	
 echo $PrevicionTiempo;
 }
-else if ($Error!="")
-{
-echo = $Error;	
-}
+
 ?>
 </div>
 
